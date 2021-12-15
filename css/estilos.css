@@ -2,9 +2,94 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
 }
 
 body {
-    background-color: aquamarine;
+    background-color: #fff;
+    font-family: 'lato';
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+header {
+    background-image: url(../img/portada.png);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: cover;
+}
+
+header .menu {
+    margin: 30px 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+
+header .menu a {
+    font-size: 18px;
+    font-family: 'lato';
+    font-weight: 300px;
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .contenido-header {
+    margin: 120px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header .contenido-header .titulo-header {
+    font-size: 120px;
+    text-align: center;
+    color: #fff;
+}
+
+header .contenido-header .linea-header {
+    width: 700px;
+    margin: auto;
+    height: 2px;
+    background-color: #15afa4;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+header .contenido-header .texto-header {
+    color: #fff;
+    font-weight: 300;
+    margin: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+header .contenido-header .action-header {
+    display: inline-block;
+    margin: auto;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #15a4fa;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header .contenido-header .action-header:hover {
+    background-color: #15a4fa;
+    color: #fff;
 }
