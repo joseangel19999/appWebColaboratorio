@@ -6,7 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Online</title>
+    <!-- libreria de inconos -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- estilos css -->
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/bigBox.css">
+    <!-- srcips de bigBox,jquery,gsap -->
+    <script src="./js/libs/jquery-2.1.4.min.js"></script>
+    <script src="./js/libs/gsap.min.js"></script>
+    <script src="./js/libs/bigBox.js"></script>
 </head>
 
 <body>
@@ -30,6 +38,21 @@
         <h2>Contenido</h2>
     </main>
     <script src="./js/main.js"></script>
+    <script>
+        $(".action-header").on("click", function(e) {
+            e.preventDefault();
+            $.bigBox({
+                icono: "bx bx-info-circle",
+                titulo: "Exito",
+                texto: "Se guardaron exitosamente los datos",
+                textoBoton: "Aceptar"
+            }, function(boton) {
+                if (boton === "bigBox-Boton") {
+                    alert("aceptar click");
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
